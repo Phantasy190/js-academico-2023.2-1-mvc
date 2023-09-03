@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Página Disciplina - Acadêmico - IFPB</title>
+</head>
+
+<body>
+
+    <!-- ---------------------------------------- ---------------------->
+    <!-- palavras reservadas para id = codigo, disciplina ----->
+
+    <h2>TESTE: MÉTODO CRIAR DISCIPLINA </h2>
+
+    Código:<input id="codigo" type="number"><br>
+    Disciplina:<input id="disciplina"><br>
+
+    <button onclick="disciplinaControlador.inserirDisciplina()">Criar Disciplina</button>
+
+    <ol id="listaDisciplinas">
+
+    </ol>
+
+    <div id="mensagemErro2"></div>
+
+    <!-- ---------------------------------------- ---------------------->
+    <!-- palavras reservadas para id = pesquisa_disciplina ----->
+
+    <h2>TESTE: MÉTODO PESQUISAR - PESQUISAR NOME DA DISCIPLINA  </h2>
+
+    Pesquisar Disciplina - Nome: <input id="pesquisa_disciplina"><br>
+
+    <button onclick="disciplinaControlador.pesquisarDisciplina()">Pesquisar Disciplina</button>
+
+    <div id="respostaDisciplina"></div>
+
+    <br><div id="mensagemErro3"></div>
+
+    <!-- ---------------------------------------- ---------------------->
+    <!-- palavras reservadas para id = informacodigo_disciplina, atualizanome_disciplina, atualizaalunos_disciplina , respostaAtualizacao, mensagemErro3     ----->
+
+    <h2>TESTE: MÉTODO ATUALIZAR - ATUALIZAR NOME DA DISCIPLINA </h2>
+
+    Informe o código da disciplina: <input id="informacodigo_disciplina"><br>
+
+    Atualizar nome da disciplina: <input id="atualizanome_disciplina"><br>
+
+    <button onclick="disciplinaControlador.atualizarDisciplina()">Atualizar Disciplina</button>
+
+    <div id="respostaAtualizacao"></div>
+
+    <br><div id="mensagemErro4"></div> 
+
+    <!-- ---------------------------------------- ---------------------->
+
+    <h2>TESTE: MÉTODO INSERIR ALUNOS NA DISCIPLINA - INSERE ALUNOS NO ARRAY DA DISCIPLINA  </h2>
+
+    Informe o código da disciplina: <input id="codigo_disciplina_aluno"><br>
+
+    Informe a matrícula do aluno: <input id="matricula_aluno"><br>
+
+    <button onclick="disciplinaControlador.inserirAlunoNaDisciplina()">Inserir Aluno</button>
+
+    <div id="respostaInserirAluno"></div>
+
+    <div id="mensagemErro5"></div>
+
+    <!-- ---------------------------------------- ---------------------->
+    <!-- palavras reservadas para id = informacodigo_disciplina, atualizanome_disciplina, atualizaalunos_disciplina , respostaAtualizacao, mensagemErro3     ----->
+
+    <h2>TESTE: MÉTODO REMOVER  - REMOVER DISCIPLINA </h2>
+
+    <p>Remover Disciplina: </p>
+
+    Informe o código da disciplina para ser removida: <input id="recebe_codigo_remover"><br>
+
+    <button onclick="disciplinaControlador.removerDisciplina()">Remover Disciplina</button>
+
+    <br><div id="resposta_remover"></div>
+
+    <br><div id="mensagemErro6"></div>
+
+    <hr size="2.5" color="black">
+
+    <h2>TESTE: MÉTODO REMOVER  - REMOVER ALUNO DE DISCIPLINA  </h2>
+
+    <p>Remover Aluno de Disciplina: NÃO FINALIZADO</p>
+
+    Informe o código da disciplina: <input id="recebe_codigo_remover"><br>
+
+    Informe o aluno disciplina para ser removida: <input id="recebe_codigo_remover"><br>
+
+    <button onclick="disciplinaControlador.removerAlunoDisciplina()">Remover Disciplina</button>
+
+    <div id="mensagemErro7"></div>
+
+<!-- ---------------------------------------- -------------------------------------------------------->
+<!-- SCRIPTS -->
+    
+    <script src="modelo/aluno.js"></script>
+    <script src="modelo/disciplina.js"></script>
+    <script src="repositorio/aluno_repositorio.js"></script>
+    <script src="repositorio/disciplina_repositorio.js"></script>
+    <script src="servico/aluno_service.js"></script>
+    <script src="servico/disciplina_service.js"></script>
+    <script src="controlador/aluno_controlador.js"></script>
+    <script src="controlador/disciplina_controlador.js"></script>
+    <script src="script.js"></script> 
+   
+
+</body>
+
+</html>
